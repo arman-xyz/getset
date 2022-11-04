@@ -1,0 +1,22 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student</title>
+    <link rel="stylesheet" href=" {% static 'pro1/css/bootstrap.css' %} ">
+  </head>
+  <body>
+    <div class="container mt-5 ">
+        <h1 class='text-center alert alert-danger' >Student Portal</h1>
+
+        {% block content %}{% endblock content %}
+    </div>
+
+
+    <script src=" {% static 'pro1/css/bootstrap.js' %} " defer ></script>
+    <script src=" {% static 'pro1/css/popper.js' %} " defer ></script>
+  </body>
+    
+</html>
